@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: stretch;
+}
+
+.form-padding {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.label-text-size {
+  font-size: 1.5em;
+}

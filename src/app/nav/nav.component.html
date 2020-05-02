@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item *ngIf="!this.authService.isLoggedIn">
+                <span><a routerLink='/login'>Bejelentkezés</a></span>
+            </button>
+            <button mat-menu-item *ngIf="!this.authService.isLoggedIn">
+                <span><a routerLink='/regist'>Regisztráció</a></span>
+            </button>
+        </mat-menu>
+        <span id="middle">Movie comparator</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+  
